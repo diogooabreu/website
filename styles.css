@@ -221,8 +221,14 @@ dt{
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
-  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.project-item__media img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {
