@@ -74,16 +74,30 @@
 
 <body>
     <div class="site-shell">
-        <main>
+        <aside class="sidebar" aria-label="Sumário">
+            <nav class="summary">
+                <span class="summary__title">Sumário</span>
+                <a href="#contact">Contatos</a>
+                <a href="#aboutme">Sobre</a>
+                <a href="#projects">Projetos</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <div class="language-switcher" role="group" aria-label="Selecionar idioma">
+                <button class="language-switcher__button" type="button" lang="pt-BR" data-lang="pt-BR" aria-label="Português" aria-pressed="true">PT</button>
+                <button class="language-switcher__button" type="button" lang="en" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
+            </div>
+
             <header class="hero">
                 <div class="avatar" aria-hidden="true">
                     <img src="/assets/aska.png" alt="Ilustração da personagem Aska">
                 </div>
                 <h1>Dio</h1>
-                <p class="avatar-row">Illustrator / Programmer</p>
+                <p class="avatar-row">Illustrator / Full-Stack Developer</p>
             </header>
 
-            <section class="section" aria-labelledby="primary-links-title">
+            <section class="section" id="contact" aria-labelledby="primary-links-title">
                 <div class="section-head">
                     <span class="section-id">00.</span>
                     <h2 id="primary-links-title">Links principais</h2>
@@ -107,30 +121,34 @@
                 </nav>
             </section>
 
-            <section class="section" aria-labelledby="about-me">
+            <section class="section" id="aboutme" aria-labelledby="about-me">
                 <div class="section-head">
                     <span class="section-id">01</span>
                     <h2 id="about-me">Um pouco sobre mim</h2>
                 </div>
                 <div class="body-copy">
-                    <p>Meu nome é Diogo Abreu, ou Dio, também vale. Atualmente moro no Paraná. Sou artista e comecei a programar em 2023 na época que entrei na faculdade, mas sempre tive certo interesse pelas questões que abrangem a tecnologia. Aprender a criar software, compreender estilos arquiteturais e paradigmas me fez enxergar uma similaridade com as ilustrações que já fazia, o que me pegou desprevinido mas também me deixou cativado.</p>
-                    <p>Minha stack principal é Node.js com TypeScript, porém gosto de explorar tecnologias novas. Atualmente, venho estudando IaC (Infrastructure as Code) e TDD (Test-Driven Development) para aprimorar minhas perceptions de arquitetura. Estudar infraestrutura no meio disso tudo me ajuda a compreender a importância dos fundamentos na resolução de problemas complexos.</p>
+                    <p>Olá. Meu nome é Diogo Abreu (pode me chamar de Dio).</p>
+                    <p>Atualmente moro no Paraná e atuo como artista (hobby) e desenvolvedor full-stack. Comecei a programar em 2023, quando ingressei na faculdade, embora meu interesse por tecnologia já existisse muito antes. Ao longo dessa jornada, aprender a desenvolver software, explorar estilos arquiteturais e compreender diferentes paradigmas de programação me fez perceber uma conexão inesperada com outra atividade que já fazia parte da minha vida: a ilustração.</p>
+                    <p>Essa aproximação me chamou a atenção principalmente pela presença da abstração, um conceito fundamental tanto na arte quanto na engenharia de software. Perceber como formas de expressão tão distintas podem compartilhar princípios semelhantes foi algo que despertou ainda mais minha curiosidade e interesse pela área.</p>
+                    <p>Minha stack principal é Node.js com TypeScript, mas gosto de explorar novas tecnologias e aprofundar meus conhecimentos para além do desenvolvimento de aplicações. Atualmente, tenho direcionado meus estudos para IaC (Infrastructure as Code), TDD (Test-Driven Development) e Spec-Driven Development, especialmente pela possibilidade de estabelecer processos mais consistentes e eficientes no desenvolvimento de software, incluindo projetos que envolvem engenharia assistida por agentes de Inteligência Artificial.</p>
                 </div>
             </section>
 
             <section class="section" aria-labelledby="identity-title">
             <div class="section-head">
                 <span class="section-id">02</span>
-                <h2 id="identity-title">Panorama rápido</h2>
+                <h2 id="identity-title">Visão geral</h2>
             </div>
             <dl class="info-grid">
                 <div class="fact">
-                    <dt>Base</dt>
+                    <dt>Onde me encontro?</dt>
                     <dd>Paraná, Brasil</dd>
                 </div>
                 <div class="fact">
                     <dt>Stack atual</dt>
-                    <dd>Node.js, TypeScript e Nest.js</dd>
+                    <dd><strong>- Back-end & APIs: </strong>Node.js, TypeScript e Nest.js</dd>
+                    <dd><strong>- Front-end & Mobile: </strong>HTML/CSS, JavaScript, React/Next.js, Tailwind CSS, React Native (Expo)</dd>
+                    <dd><strong>- Infra & Práticas: </strong>Docker, Linux, CI/CD, TDD, Spec-Driven Development (SDD)</dd>
                 </div>
                 <div class="fact">
                     <dt>Nome</dt>
@@ -143,7 +161,7 @@
             </dl>
             </section>
 
-            <section class="section" aria-labelledby="projects-title">
+            <section class="section" id="projects" aria-labelledby="projects-title">
                 <div class="section-head">
                     <span class="section-id">03</span>
                     <h2 id="projects-title">Projetos Interessantes</h2>
@@ -154,7 +172,7 @@
                     <article class="project-item">
                         <div class="project-item__info">
                             <h3>CommissionTrack</h3>
-                            <p class="project-item__text">Um sistema de gerenciamento de comissões artísticas, que visa facilitar a exposição de obras e ilustrações.</p>
+                            <p class="project-item__text">Um sistema de gerenciamento de comissões artísticas, que visa facilitar a negociação de ilustrações entre clientes e artistas. Criado explorando Spec-Driven Development, TDD e outros conceitos de engenharia assistida por IA.</p>
                             <a class="project-item__link" href="https://github.com/diogooabreu/commission-track.git" target="_blank" rel="noopener noreferrer">
                                 Clique Aqui
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
@@ -163,7 +181,7 @@
                             </a>
                         </div>
                         <div class="project-item__media">
-                            <img src="/assets/aska-pencil.png" alt="Ilustração da Aska com pincel">
+                            <img src="assets/aska-pencil.png" alt="Ilustração da Aska com pincel">
                         </div>
                     </article>
 
