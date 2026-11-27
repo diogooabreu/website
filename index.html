@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diogo Abreu | Sobre mim, contatos e projetos</title>
-    <meta name="description" content="Links oficiais do Dio, nome artístico de Diogo N. Abreu">
+    <title>Diogo Abreu | Full-Stack Developer & Ilustrador</title>
+    <meta name="description" content="Links oficiais de Diogo Abreu (Dio)">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <meta name="author" content="Diogo N. Abreu">
     <meta name="theme-color" content="#191919">
+    
     <!-- URLs Canônicas e Alternativas -->
     <link rel="canonical" href="https://diogo-abreu.vercel.app/">
     <link rel="alternate" hreflang="pt-BR" href="https://diogo-abreu.vercel.app/">
     <link rel="alternate" hreflang="en" href="https://diogo-abreu.vercel.app/en">
     <link rel="alternate" hreflang="x-default" href="https://diogo-abreu.vercel.app/">
+
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:site_name" content="Dio's Page">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Diogo Abreu | Sobre mim, contatos e projetos">
-    <meta property="og:description" content="Links oficiais do Dio, nome artístico de Diogo N. Abreu">
+    <meta property="og:type" content="profile">
+    <meta property="profile:first_name" content="Diogo">
+    <meta property="profile:last_name" content="Abreu">
+    <meta property="profile:username" content="diogoabreu">
+    <meta property="og:title" content="Diogo Abreu | Full-Stack Developer & Ilustrador">
+    <meta property="og:description" content="Links oficiais de Diogo Abreu (Dio)">
     <meta property="og:url" content="https://diogo-abreu.vercel.app/">
     <meta property="og:image" content="https://diogo-abreu.vercel.app/assets/banner.jpg">
     <meta property="og:image:alt" content="Ilustração da Aska, OC de Diogo Abreu">
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image:width" content="512>
+    <meta property="og:image:height" content="512">]
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Diogo Abreu (Dio) | Full-Stack Developer & Ilustrador">
+    <meta name="twitter:description" content="Links oficiais, portfólio e redes sociais de Dio (Diogo N. Abreu), desenvolvedor Full-Stack e ilustrador.">
+    <meta name="twitter:image" content="https://diogo-abreu.vercel.app/assets/banner.jpg">
     
     <!-- Fontes e Estilos -->
     <link rel="preconnect" href="https://static.ietf.org" crossorigin>
@@ -35,39 +45,70 @@
     <!-- Dados Estruturados (JSON-LD) -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+        "@type": "WebSite",
+        "@id": "https://diogo-abreu.vercel.app/#website",
+        "url": "https://diogo-abreu.vercel.app/",
+        "name": "Diogo N. Abreu",
+        "inLanguage": "pt-BR",
+        "publisher": {
+            "@id": "https://diogo-abreu.vercel.app/#person"
+        }
+        },
+        {
         "@type": "ProfilePage",
         "@id": "https://diogo-abreu.vercel.app/#profile",
         "url": "https://diogo-abreu.vercel.app/",
         "name": "Dio | Links oficiais",
-        "dateModified": "2026-05-21",
+        "inLanguage": "pt-BR",
+        "isPartOf": {
+            "@id": "https://diogo-abreu.vercel.app/#website"
+        },
+        "dateCreated": "2026-01-01T00:00:00-03:00",
+        "dateModified": "2026-11-27T00:00:00-03:00",
         "mainEntity": {
-            "@type": "Person",
-            "@id": "https://diogo-abreu.vercel.app/#person",
-            "name": "Diogo N. Abreu",
-            "alternateName": "Dio",
-            "url": "https://diogo-abreu.vercel.app/",
-            "image": "https://diogo-abreu.vercel.app/assets/aska.png",
-            "description": "Desenvolvedor backend e ilustrador.",
-            "jobTitle": [
-                "Software Developer"
-            ],
-            "homeLocation": {
-                "@type": "Place",
-                "name": "Paraná, Brasil"
-            },
-            "knowsAbout": [
-                "Programação",
-                "Backend Development",
-                "Node.js",
-                "Express",
-                "Nest.js",
-                "TypeScript"
-            ],
-            "sameAs": [
-                "https://github.com/diogooabreu"
-            ]
+            "@id": "https://diogo-abreu.vercel.app/#person"
         }
+        },
+        {
+        "@type": "Person",
+        "@id": "https://diogo-abreu.vercel.app/#person",
+        "name": "Diogo N. Abreu",
+        "alternateName": "Dio",
+        "url": "https://diogo-abreu.vercel.app/",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://diogo-abreu.vercel.app/assets/wind2.jpg"
+        },
+        "description": "Desenvolvedor Full-Stack & Ilustrador.",
+        "jobTitle": [
+            "Software Developer",
+            "Full-Stack Developer",
+            "Illustrator"
+        ],
+        "homeLocation": {
+            "@type": "Place",
+            "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "PR",
+            "addressCountry": "BR"
+            }
+        },
+        "knowsAbout": [
+            "Backend Development",
+            "Node.js",
+            "Express.js",
+            "NestJS",
+            "TypeScript",
+            "Ilustração Digital"
+        ],
+        "sameAs": [
+            "https://github.com/diogooabreu"
+        ]
+        }
+    ]
     }
     </script>
 </head>
@@ -91,7 +132,7 @@
 
             <header class="hero">
                 <div class="avatar" aria-hidden="true">
-                    <img src="/assets/aska.png" alt="Ilustração da personagem Aska">
+                    <img src="/assets/wind2.jpg" alt="Ilustração da personagem Aska">
                 </div>
                 <h1>Dio</h1>
                 <p class="avatar-row">Illustrator / Full-Stack Developer</p>
